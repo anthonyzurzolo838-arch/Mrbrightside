@@ -1,0 +1,727 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<title>champagne coast - Online Sequencer</title>
+<link rel="canonical" href="https://onlinesequencer.net/4843763" />
+<meta property="og:url" content="https://onlinesequencer.net/4843763" />
+<meta property="og:image" content="https://onlinesequencer.net/preview/4843763?r=4">
+<link rel="alternate" type="application/json+oembed" href="https://onlinesequencer.net/embed/4843763" />
+<meta property="og:title" content="champagne coast">
+<meta property="og:site_name" content="Online Sequencer" />
+<meta name="author" content="f.ev4">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="description" content="OnlineSequencer.net is an online music sequencer. Make tunes in your browser and share them with friends!" />
+<meta property="og:type" content="website" />
+<meta property="og:description" content="OnlineSequencer.net is an online music sequencer. Make tunes in your browser and share them with friends!" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta property="fb:app_id" content="1512952002290893" />
+<style id="css_vars">
+.key, .key_sharp, .key div, .key_sharp div {
+
+}
+.measure {
+
+}
+</style>
+<link rel="preload" href="//fonts.googleapis.com/css?family=PT+Sans:400,700" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<link rel="stylesheet" href="/resources/c/e8161ef0fbf8bfb218cfb7db87b974c3.css" />
+<link rel="preload" href="/app/sequencer.worker.js" as="script">
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-3037948-7"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-3037948-7');
+</script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<link rel="preload" href="/resources/fontawesome.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<link rel="preload" href="https://cdn.jsdelivr.net/gh/mdbassit/Coloris@latest/dist/coloris.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<script defer src="https://unpkg.com/dexie/dist/dexie.js" onload="if(typeof checkForUnsavedSequence == 'function') checkForUnsavedSequence();"></script>
+<script defer src="https://cdn.jsdelivr.net/gh/mdbassit/Coloris@latest/dist/coloris.min.js"></script>
+<script defer src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript" src="/resources/c/6ae120f90d2d726cb2eb46c9f66c93a0.js"></script>
+<script type="text/javascript">
+settings['uid'] = 0;
+settings['username'] = "";
+settings['logoutkey'] = null;
+settings['post_key'] = "ac3c3264b7ea61123d25af6f564b093d";
+</script>
+<script data-cfasync="false">
+  window.ramp = window.ramp || {};
+  window.ramp.que = window.ramp.que || [];
+</script>
+</head>
+<body id="page_view">
+<div id="container">
+<div id="header">
+
+<div id="nav">
+    <a id="logo" href="/">
+        <div class="icon"></div>
+        <div class="text">
+            <span class="title">Online Sequencer</span>
+            <span class="subtitle">Make music online</span>
+        </div>
+    </a>
+    <div id="header_right">
+    <ul>
+<li><a href="/sequences">Sequences</a></li><li><a href="/memberlist">Members</a></li><li><a class="chat_link" href="javascript:;" onclick="showChat();"><div class="link">Chat</div><div class="online"></div></a></li><li><a href="/forum/">Forum</a></li><li><a href="/wiki/" target="_blank">Wiki</a></li><li id="ad_container">
+    <div id="ad">
+        <!-- GAM 71161633/ONSE_onlinesequencer/header -->
+        <div data-fuse="header"></div>
+    </div>
+</li>
+</ul>
+<div id="bar">
+    <div style="float:right; position: relative;">
+        <div id="user_loading">
+        </div>
+        <div id="user_guest" style="display: block">
+            <div id="login_fields">
+                <input type="text" id="username" name="username" placeholder="Username" />
+                <input type="password" id="password" name="password" placeholder="Password" />
+            </div>
+            <a id="login_button" class="linkbutton" href="javascript:;">Login</a>
+            <form action="/forum/member.php" target="_blank" style="display: inline" method="post">
+                <input type="hidden" name="step" value="agreement">
+                <input type="hidden" name="action" value="register">
+                <input id="registerbutton" type="submit" class="button" name="agree" value="Register">
+            </form>
+            </span>
+        </div>
+        <div id="user_member" style="display: none">
+            Welcome back <span id="member_username"><a href="/members/0"></a></span>!
+                        
+            <a id="member_logout" class="linkbutton" href="javascript:;">Log out</a>
+        </div>
+    </div>
+    <span id="sequence_info"></span>
+    </div>
+</div>
+            </div>
+        </div>
+
+        <div id="main">
+                        <div id="page">
+
+                        
+            
+            <div id="page_content">
+                        <div id="page_right" style="max-width:none; background: none;">
+<style type="text/css">
+#main {
+    bottom: 0;
+}
+</style>
+
+<div id="frame_wrapper">
+    <template id="template-info-sidebar">
+  <div class="info-sidebar">
+    <div class="info-sidebar-section info-sidebar-header">
+      <div class="info-sidebar-title">
+        <span>champagne coast</span>
+        <i id="info-sidebar-close" class="far fa-times" onclick="sidebar.close()"></i>
+      </div>
+      <div class="info-sidebar-details"><span class="playcount" data-sequence="4843763">864 plays<div class="playcount-chart-popup"><div class="playcount-chart-popup-content"><span class="loader"></span></div></div></span> &middot; <span title="created 2025-08-31">updated 2025-09-01</span> by <a href="/members/202494">f.ev4</a><br><a href="#" onclick="exportMidi();">Download MIDI</a><script>initPlayCountChart();</script></div>
+    </div>
+            <div id="info-sidebar-load-comments" class="info-sidebar-section">
+    <script>if (commentsType == null) { commentsType = 0; commentsId = 4843763; }</script><div class="comments" id="comments"><div class="comments-header"><span class="comments-title"><span class="comments_count">0</span>&nbsp;Comments</span><div class="comments-header-right"><span class="sidebar-button comments-reload" onclick="updateComments(commentsType, commentsId, 1)"> <i class="comments-reload-icon fas fa-redo-alt"></i><span class="comments-loading loader"></span></span></div></div><div class="comments-content">No comments yet</div></div>    </div>
+  </div>
+</template>
+<script type="text/javascript">
+settings.user = {"shortcuts":"","disable_webgl":"false","remember_length":"true","remember_volume":"true","custom_cursor":"false"};
+window.audioFormat = 'mp3';
+loadingSounds = false;
+loadingSequence = false;
+sequenceDuration = 64;
+onPageLoad = function()
+{
+    create();
+    $('#loading_overlay').css('display', 'none');
+    var data = 'CvsBCHgaFAgKEhANCteDP1ABmAEMpQEAAAA/GhQIAhIQDc3MrD9QAZgBDKUBAAAAPxoUCBcSEA0fhas/UAGYAQylAQAAAD8aFAgtEhANPQqXP1ABmAEMpQEAAAA/GhQILhIQDfYonD9QAZgBDKUBAAAAPxoUCC8SEA0pXI89UAGYAQylAQAAAD8aFAgzEhANFK4HP1ABmAEMpQEAAAA/GkIINxI+DQAAgD9QAZgBDKUBAAAAP3IsEgotAACAPzUAAIA/GgotAACAPzUAAIA/JQBAnEYtAAAgQU0AAIBAVc3MTD4aFAg9EhANKVxPP1ABmAEMpQEAAAA/JSlcD74SDghFHQAAAEAgLi0AAIA/EhMIRxUAAABAHQAAAEAgLi0AAIA/EhMISRUAAIBAHQAAAEAgLi0AAIA/EhMITBUAAMBAHQAAAEAgLi0AAIA/EhMIThUAAABBHQAAAEAgLi0AAIA/EhMIUxUAAABBHQAAAEAgLi0AAIA/EhMIURUAACBBHQAAAEAgLi0AAIA/EhMIThUAAEBBHQAAAEAgLi0AAIA/EhMIURUAAGBBHQAAAEAgLi0AAIA/EhMIUxUAAIBBHQAAAEAgLi0AAIA/EhMIThUAAIBBHQAAAEAgLi0AAIA/EhMIURUAAJBBHQAAAEAgLi0AAIA/EhMIThUAAKBBHQAAAEAgLi0AAIA/EhMITBUAALBBHQAAAEAgLi0AAIA/EhMIURUAAMBBHQAAAEAgLi0AAIA/EhMISRUAAOBBHQAAAEAgLi0AAIA/EhMIRxUAAPBBHQAAAEAgLi0AAIA/EhMISRUAAABCHQAAAEAgLi0AAIA/EhMIThUAABBCHQAAAEAgLi0AAIA/EhMIURUAABhCHQAAAEAgLi0AAIA/EhMIUxUAACBCHQAAAEAgLi0AAIA/EhMIThUAACBCHQAAAEAgLi0AAIA/EhMIURUAAChCHQAAAEAgLi0AAIA/EhMIThUAADBCHQAAAEAgLi0AAIA/EhMIURUAADhCHQAAAEAgLi0AAIA/EhMIUxUAAEBCHQAAAEAgLi0AAIA/EhMIThUAAEBCHQAAAEAgLi0AAIA/EhMIURUAAEhCHQAAAEAgLi0AAIA/EhMIThUAAFBCHQAAAEAgLi0AAIA/EhMITBUAAFhCHQAAAEAgLi0AAIA/EhMIURUAAGBCHQAAAEAgLi0AAIA/EhMIVRUAAGBCHQAAAEAgLi0AAIA/EhMITBUAAGhCHQAAAEAgLi0AAIA/EhMISRUAAHBCHQAAAEAgLi0AAIA/EhMIRxUAAHhCHQAAAEAgLi0AAIA/EhMISRUAAIBCHQAAAEAgLi0AAIA/EhMITBUAAIRCHQAAAEAgLi0AAIA/EhMISRUAAIhCHQAAAEAgLi0AAIA/EhMIRxUAAIxCHQAAAEAgLi0AAIA/EhMISRUAAJBCHQAAAEAgLi0AAIA/EhMIThUAAJBCHQAAAEAgLi0AAIA/EhMIUxUAAJBCHQAAAEAgLi0AAIA/EhMIURUAAJRCHQAAAEAgLi0AAIA/EhMIThUAAJhCHQAAAEAgLi0AAIA/EhMIURUAAJxCHQAAAEAgLi0AAIA/EhMIUxUAAKBCHQAAAEAgLi0AAIA/EhMIThUAAKBCHQAAAEAgLi0AAIA/EhMIURUAAKRCHQAAAEAgLi0AAIA/EhMIThUAAKhCHQAAAEAgLi0AAIA/EhMITBUAAKxCHQAAAEAgLi0AAIA/EhMIURUAALBCHQAAAEAgLi0AAIA/EhMITBUAALRCHQAAAEAgLi0AAIA/EhMISRUAALhCHQAAAEAgLi0AAIA/EhMIRxUAALxCHQAAAEAgLi0AAIA/EhMISRUAAMBCHQAAAEAgLi0AAIA/EhMITBUAAMRCHQAAAEAgLi0AAIA/EhMIURUAAMxCHQAAAEAgLi0AAIA/EhMIUxUAANBCHQAAAEAgLi0AAIA/EhMIThUAAMhCHQAAAEAgLi0AAIA/EhMIURUAANRCHQAAAEAgLi0AAIA/EhMIThUAANhCHQAAAEAgLi0AAIA/EhMIVRUAAOBCHQAAAEAgLi0AAIA/EhMITBUAANxCHQAAAEAgLi0AAIA/EhMIURUAAOBCHQAAAEAgLi0AAIA/EhMITBUAAORCHQAAAEAgLi0AAIA/EhMISRUAAOhCHQAAAEAgLi0AAIA/EhMIRxUAAPxCHQAAAEAgLi0AAIA/EhMIRRUAAAZDHQAAAEAgLi0AAIA/EhMIRRUAAAhDHQAAAEAgLi0AAIA/EhMIRRUAAApDHQAAAEAgLi0AAIA/EhMIRRUAABRDHQAAAEAgLi0AAIA/EhMIRRUAAAxDHQAAgEAgLi0AAIA/EhMIRRUAABBDHQAAgEAgLi0AAIA/EhMIRRUAABZDHQAAAEAgLi0AAIA/EhMIRRUAAChDHQAAAEAgLi0AAIA/EhMIRRUAACpDHQAAAEAgLi0AAIA/EhMIRRUAADRDHQAAAEAgLi0AAIA/EhMIRRUAADZDHQAAAEAgLi0AAIA/EhMIRRUAACxDHQAAgEAgLi0AAIA/EhMIRRUAADBDHQAAgEAgLi0AAIA/EhMIRRUAABxDHQAAgEAgLi0AAIA/EhMIRRUAACBDHQAAgEAgLi0AAIA/EhMIRRUAACRDHQAAgEAgLi0AAIA/EhMIRxUAADhDHQAAgEAgLi0AAIA/EhMISRUAADxDHQAAgEAgLi0AAIA/EhMIRRUAAEBDHQAAgEAgLi0AAIA/EhMIRRUAAEhDHQAAgEAgLi0AAIA/EhMIRRUAAExDHQAAgEAgLi0AAIA/EhMIRRUAAERDHQAAAEAgLi0AAIA/EhMIRRUAAEZDHQAAAEAgLi0AAIA/EhMIRRUAAFZDHQAAAEAgLi0AAIA/EhMIRRUAAFhDHQAAAEAgLi0AAIA/EhMIRRUAAFpDHQAAAEAgLi0AAIA/EhMIRRUAAFxDHQAAgEAgLi0AAIA/EhMIRRUAAGBDHQAAgEAgLi0AAIA/EhMIRRUAAGRDHQAAAEAgLi0AAIA/EhMIRRUAAGZDHQAAAEAgLi0AAIA/EhMIRRUAAHBDHQAAAEAgLi0AAIA/EhMIRRUAAHJDHQAAAEAgLi0AAIA/EhMIRRUAAHRDHQAAAEAgLi0AAIA/EhMIRRUAAHZDHQAAAEAgLi0AAIA/EhMIRRUAAGhDHQAAgEAgLi0AAIA/EhMIRRUAAGxDHQAAgEAgLi0AAIA/EhMIRxUAAHhDHQAAgEAgLi0AAIA/EhMISRUAAHxDHQAAAEAgLi0AAIA/EhMIQhUAAHxDHQAAAEAgLi0AAIA/EhMIRRUAAH5DHQAAAEAgLi0AAIA/EhMIRRUAAIBDHQAAAEEgLi0AAIA/EhMISRUAAIBDHQAAAEEgLi0AAIA/EhMITBUAAIBDHQAAAEEgLi0AAIA/EhMITBUAAIVDHQAAgEAgLi0AAIA/EhMISRUAAIVDHQAAgEAgLi0AAIA/EhMITBUAAIdDHQAAgEAgLi0AAIA/EhMISRUAAIdDHQAAgEAgLi0AAIA/EhMITBUAAIxDHQAAAEAgLi0AAIA/EhMISRUAAJBDHQAAAEEgLi0AAIA/EhMIRRUAAJBDHQAAAEEgLi0AAIA/EhMIQhUAAJBDHQAAAEEgLi0AAIA/EhMISRUAAJVDHQAAgEAgLi0AAIA/EhMIRRUAAJVDHQAAgEAgLi0AAIA/EhMISRUAAJdDHQAAgEAgLi0AAIA/EhMIRRUAAJdDHQAAgEAgLi0AAIA/EhMISRUAAJxDHQAAgEAgLi0AAIA/EhMIRRUAAJxDHQAAgEAgLi0AAIA/EhMIQhUAAJxDHQAAgEAgLi0AAIA/EhMIShUAAJ5DHQAAAEAgLi0AAIA/EhMIRRUAAJ5DHQAAAEAgLi0AAIA/EhMIQhUAAJ5DHQAAAEAgLi0AAIA/EhMISRUAAJ9DHQAAAEAgLi0AAIA/EhMIRRUAAJ9DHQAAAEAgLi0AAIA/EhMIQhUAAJ9DHQAAAEAgLi0AAIA/EhMIQhUAAKBDHQAAAEEgLi0AAIA/EhMIRRUAAKBDHQAAAEEgLi0AAIA/EhMIRxUAAKBDHQAAAEEgLi0AAIA/EhMISRUAAKVDHQAAgD8gLi0AAIA/EhMIRRUAAKVDHQAAgD8gLi0AAIA/EhMIRxUAgKVDHQAAAEAgLi0AAIA/EhMISRUAgKZDHQAAgD8gLi0AAIA/EhMIRRUAgKZDHQAAgD8gLi0AAIA/EhMIRxUAAKdDHQAAAEAgLi0AAIA/EhMISRUAAKxDHQAAAEEgLi0AAIA/EhMIRRUAAKxDHQAAAEEgLi0AAIA/EhMIQhUAAKxDHQAAAEEgLi0AAIA/EhMIQhUAALBDHQAAAEEgLi0AAIA/EhMIRRUAALBDHQAAgEEgLi0AAIA/EhMIQhUAALRDHQAAgEAgLi0AAIA/EhMIQhUAALZDHQAAgEAgLi0AAIA/EhMITBUAAMBDHQAAAEEgLi0AAIA/EhMISRUAAMBDHQAAAEEgLi0AAIA/EhMIRRUAAMBDHQAAAEEgLi0AAIA/EhMISRUAAMVDHQAAgEAgLi0AAIA/EhMITBUAAMVDHQAAgEAgLi0AAIA/EhMISRUAAMdDHQAAgEAgLi0AAIA/EhMITBUAAMdDHQAAgEAgLi0AAIA/EhMIRRUAANBDHQAAAEEgLi0AAIA/EhMISRUAANBDHQAAAEEgLi0AAIA/EhMIQhUAANBDHQAAAEEgLi0AAIA/EhMIRRUAANVDHQAAgEAgLi0AAIA/EhMISRUAANVDHQAAgEAgLi0AAIA/EhMISRUAANdDHQAAgEAgLi0AAIA/EhMIRRUAANdDHQAAgEAgLi0AAIA/EhMIRRUAANxDHQAAgEAgLi0AAIA/EhMISRUAANxDHQAAgEAgLi0AAIA/EhMIQhUAANxDHQAAgEAgLi0AAIA/EhMIQhUAAOBDHQAAAEEgLi0AAIA/EhMIRRUAAOBDHQAAAEEgLi0AAIA/EhMIRxUAAOBDHQAAAEEgLi0AAIA/EhMIRRUAAOVDHQAAgD8gLi0AAIA/EhMISRUAAOVDHQAAgD8gLi0AAIA/EhMIRxUAgOVDHQAAAEAgLi0AAIA/EhMIRxUAAOdDHQAAAEAgLi0AAIA/EhMISRUAgOZDHQAAgD8gLi0AAIA/EhMISRUAAOxDHQAAAEEgLi0AAIA/EhMIRRUAAOxDHQAAAEEgLi0AAIA/EhMIQhUAAOxDHQAAAEEgLi0AAIA/EhMIRRUAAPBDHQAAgEEgLi0AAIA/EhMIQhUAAPBDHQAAAEEgLi0AAIA/EhMIQhUAAPRDHQAAAEEgLi0AAIA/EhMIThUAANBCHQAAAEAgLi0AAIA/EhMIRxUAAOxCHQAAAEAgLi0AAIA/EhMISRUAAPBCHQAAAEAgLi0AAIA/EhMITBUAAPRCHQAAAEAgLi0AAIA/EhMISRUAAPhCHQAAAEAgLi0AAIA/EhMIRRUAAABDHQAAAEAgLi0AAIA/EhMIRBUAAAJDHQAAAEAgLi0AAIA/EhMIQhUAAARDHQAAAEAgLi0AAIA/EhMIRRUAABhDHQAAAEAgLi0AAIA/EhMIRRUAAFBDHQAAAEAgLi0AAIA/EhMIRRUAAFJDHQAAAEAgLi0AAIA/EhMIRRUAAFRDHQAAAEAgLi0AAIA/EhMISRUAAIxDHQAAAEAgLi0AAIA/EhMIRRUAAIxDHQAAAEAgLi0AAIA/EhMISRUAAI1DHQAAAEAgLi0AAIA/EhMISRUAAI5DHQAAAEAgLi0AAIA/EhMIRRUAAI1DHQAAAEAgLi0AAIA/EhMIRRUAAI5DHQAAAEAgLi0AAIA/EhMIThUAAI1DHQAAAEAgLi0AAIA/EhMITBUAAI5DHQAAAEAgLi0AAIA/EhMIShUAAI9DHQAAAEAgLi0AAIA/EhMIRxUAAI9DHQAAAEAgLi0AAIA/EhMIRRUAAI9DHQAAAEAgLi0AAIA/EhMIRRUAgOZDHQAAgD8gLi0AAIA/EhMIORUAAABAHQAAAEAgLS0AAIA/EhMIHhUAAABBHQAAAEAgLS0AAIA/EhMINBUAAIBAHQAAAEAgLS0AAIA/EhMILRUAAMBAHQAAAEAgLS0AAIA/EhMIKhUAAABBHQAAAEAgLS0AAIA/EhMINhUAAEBBHQAAAEAgLS0AAIA/EhMIORUAAGBBHQAAAEAgLS0AAIA/EhMIPRUAAIBBHQAAAEAgLS0AAIA/EhMIMRUAAJBBHQAAAEAgLS0AAIA/EhMIMRUAALBBHQAAAEAgLS0AAIA/EhMILRUAAMBBHQAAAEAgLS0AAIA/EhMILRUAANBBHQAAAEAgLS0AAIA/EhMIIRUAAMBBHQAAAEAgLS0AAIA/EhMINBUAAOBBHQAAAEAgLS0AAIA/EhMIORUAAPBBHQAAAEAgLS0AAIA/EhMIORUAAABCHQAAAEAgLS0AAIA/EhMINBUAAABCHQAAAEAgLS0AAIA/EhMINBUAAAhCHQAAAEAgLS0AAIA/EhMILRUAABBCHQAAAEAgLS0AAIA/EhMINBUAABhCHQAAAEAgLS0AAIA/EhMILxUAACBCHQAAAEAgLS0AAIA/EhMIIxUAACBCHQAAAEAgLS0AAIA/EhMILxUAAChCHQAAAEAgLS0AAIA/EhMINhUAADBCHQAAAEAgLS0AAIA/EhMIOxUAADhCHQAAAEAgLS0AAIA/EhMIOxUAAEBCHQAAAEAgLS0AAIA/EhMINhUAAEBCHQAAAEAgLS0AAIA/EhMINhUAAEhCHQAAAEAgLS0AAIA/EhMILxUAAFBCHQAAAEAgLS0AAIA/EhMINhUAAFhCHQAAAEAgLS0AAIA/EhMIMhUAAGBCHQAAAEAgLS0AAIA/EhMIJhUAAGBCHQAAAEAgLS0AAIA/EhMIMhUAAGhCHQAAAEAgLS0AAIA/EhMIORUAAHBCHQAAAEAgLS0AAIA/EhMIPhUAAHhCHQAAAEAgLS0AAIA/EhMIPhUAAIBCHQAAAEAgLS0AAIA/EhMIORUAAIBCHQAAAEAgLS0AAIA/EhMIORUAAIRCHQAAAEAgLS0AAIA/EhMIMhUAAIhCHQAAAEAgLS0AAIA/EhMIORUAAIxCHQAAAEAgLS0AAIA/EhMINhUAAJBCHQAAAEAgLS0AAIA/EhMIKhUAAJBCHQAAAEAgLS0AAIA/EhMINhUAAJRCHQAAAEAgLS0AAIA/EhMIQhUAAJhCHQAAAEAgLS0AAIA/EhMIRRUAAJxCHQAAAEAgLS0AAIA/EhMISRUAAKBCHQAAAEAgLS0AAIA/EhMIPRUAAKRCHQAAAEAgLS0AAIA/EhMINhUAAKhCHQAAAEAgLS0AAIA/EhMIPRUAAKxCHQAAAEAgLS0AAIA/EhMIORUAALBCHQAAAEAgLS0AAIA/EhMILRUAALBCHQAAAEAgLS0AAIA/EhMIORUAALRCHQAAAEAgLS0AAIA/EhMIQBUAALhCHQAAAEAgLS0AAIA/EhMIRRUAALxCHQAAAEAgLS0AAIA/EhMIRRUAAMBCHQAAAEAgLS0AAIA/EhMIQBUAAMBCHQAAAEAgLS0AAIA/EhMIORUAAMRCHQAAAEAgLS0AAIA/EhMIQBUAAMhCHQAAAEAgLS0AAIA/EhMIOxUAAMxCHQAAAEAgLS0AAIA/EhMILxUAAMxCHQAAAEAgLS0AAIA/EhMIOxUAANBCHQAAAEAgLS0AAIA/EhMIQhUAANRCHQAAAEAgLS0AAIA/EhMIRxUAANhCHQAAAEAgLS0AAIA/EhMIQhUAANxCHQAAAEAgLS0AAIA/EhMIRxUAANxCHQAAAEAgLS0AAIA/EhMIQhUAAOBCHQAAAEAgLS0AAIA/EhMIOxUAAORCHQAAAEAgLS0AAIA/EhMIQhUAAOhCHQAAAEAgLS0AAIA/EhMIPhUAAOxCHQAAAEAgLS0AAIA/EhMIPhUAAPBCHQAAAEAgLS0AAIA/EhMIMhUAAOxCHQAAAEAgLS0AAIA/EhMIRRUAAPRCHQAAAEAgLS0AAIA/EhMIShUAAPxCHQAAAEAgLS0AAIA/EhMIShUAAPhCHQAAAEAgLS0AAIA/EhMIRRUAAPxCHQAAAEAgLS0AAIA/EhMIKhUAAARDHQAAAEAgLS0AAIA/EhMIHhUAAARDHQAAAEAgLS0AAIA/EhMIORUAAApDHQAAAEAgLS0AAIA/EhMIKhUAAAZDHQAAAEAgLS0AAIA/EhMINhUAAAhDHQAAAEAgLS0AAIA/EhMIRRUAABpDHQAAAEAgLi0AAIA/EhMIPRUAAAxDHQAAAEAgLS0AAIA/EhMINhUAAAxDHQAAAEAgLS0AAIA/EhMIMRUAAA5DHQAAAEAgLS0AAIA/EhMINhUAABBDHQAAAEAgLS0AAIA/EhMIPRUAABBDHQAAAEAgLS0AAIA/EhMIMRUAABJDHQAAAEAgLS0AAIA/EhMILRUAABRDHQAAAEAgLS0AAIA/EhMIIRUAABRDHQAAAEAgLS0AAIA/EhMILRUAABZDHQAAAEAgLS0AAIA/EhMINBUAABhDHQAAAEAgLS0AAIA/EhMIORUAABpDHQAAAEAgLS0AAIA/EhMIPRUAABxDHQAAAEAgLS0AAIA/EhMINBUAABxDHQAAAEAgLS0AAIA/EhMIORUAAB5DHQAAAEAgLS0AAIA/EhMIPRUAACBDHQAAAEAgLS0AAIA/EhMINBUAACBDHQAAAEAgLS0AAIA/EhMILxUAACRDHQAAAEAgLS0AAIA/EhMIIxUAACRDHQAAAEAgLS0AAIA/EhMIMhUAACZDHQAAAEAgLS0AAIA/EhMINhUAAChDHQAAAEAgLS0AAIA/EhMIORUAACpDHQAAAEAgLS0AAIA/EhMIPhUAACxDHQAAAEAgLS0AAIA/EhMINhUAACxDHQAAAEAgLS0AAIA/EhMIORUAAC5DHQAAAEAgLS0AAIA/EhMIMhUAADBDHQAAAEAgLS0AAIA/EhMIJhUAADBDHQAAAEAgLS0AAIA/EhMINhUAADJDHQAAAEAgLS0AAIA/EhMIORUAADRDHQAAAEAgLS0AAIA/EhMIORUAADZDHQAAAEAgLS0AAIA/EhMIORUAADhDHQAAAEAgLS0AAIA/EhMIPhUAADZDHQAAAEAgLS0AAIA/EhMIMhUAADpDHQAAAEAgLS0AAIA/EhMIORUAADxDHQAAAEAgLS0AAIA/EhMIOBUAAD5DHQAAAEAgLS0AAIA/EhMIKhUAAEBDHQAAAEAgLS0AAIA/EhMIHhUAAEBDHQAAAEAgLS0AAIA/EhMIKhUAAEJDHQAAAEAgLS0AAIA/EhMINhUAAERDHQAAAEAgLS0AAIA/EhMIORUAAEZDHQAAAEAgLS0AAIA/EhMIPRUAAEhDHQAAAEAgLS0AAIA/EhMINhUAAEhDHQAAAEAgLS0AAIA/EhMIMRUAAEpDHQAAAEAgLS0AAIA/EhMINhUAAExDHQAAAEAgLS0AAIA/EhMIPRUAAExDHQAAAEAgLS0AAIA/EhMIMRUAAE5DHQAAAEAgLS0AAIA/EhMILRUAAFBDHQAAAEAgLS0AAIA/EhMIIRUAAFBDHQAAAEAgLS0AAIA/EhMILRUAAFJDHQAAAEAgLS0AAIA/EhMINBUAAFRDHQAAAEAgLS0AAIA/EhMIORUAAFZDHQAAAEAgLS0AAIA/EhMIPRUAAFhDHQAAAEAgLS0AAIA/EhMINBUAAFhDHQAAAEAgLS0AAIA/EhMIORUAAFpDHQAAAEAgLS0AAIA/EhMIPRUAAFxDHQAAAEAgLS0AAIA/EhMINBUAAFxDHQAAAEAgLS0AAIA/EhMINBUAAF5DHQAAAEAgLS0AAIA/EhMILxUAAGBDHQAAAEAgLS0AAIA/EhMIIxUAAGBDHQAAAEAgLS0AAIA/EhMIMhUAAGJDHQAAAEAgLS0AAIA/EhMINhUAAGRDHQAAAEAgLS0AAIA/EhMIORUAAGZDHQAAAEAgLS0AAIA/EhMINhUAAGhDHQAAAEAgLS0AAIA/EhMIPhUAAGhDHQAAAEAgLS0AAIA/EhMIORUAAGpDHQAAAEAgLS0AAIA/EhMIPhUAAGxDHQAAAEAgLS0AAIA/EhMINhUAAGxDHQAAAEAgLS0AAIA/EhMINhUAAG5DHQAAAEAgLS0AAIA/EhMIMhUAAHBDHQAAAEAgLS0AAIA/EhMIJhUAAHBDHQAAAEAgLS0AAIA/EhMIMhUAAHJDHQAAAEAgLS0AAIA/EhMINhUAAHRDHQAAAEAgLS0AAIA/EhMIORUAAHZDHQAAAEAgLS0AAIA/EhMIORUAAHhDHQAAAEAgLS0AAIA/EhMIQhUAAHhDHQAAAEAgLS0AAIA/EhMIPRUAAHpDHQAAAEAgLS0AAIA/EhMIORUAAHxDHQAAAEAgLS0AAIA/EhMIORUAAH5DHQAAAEAgLS0AAIA/EhMIKhUAAIBDHQAAAEAgLS0AAIA/EhMIHhUAAIBDHQAAAEAgLS0AAIA/EhMIKhUAAIFDHQAAAEAgLS0AAIA/EhMINhUAAIJDHQAAAEAgLS0AAIA/EhMIORUAAINDHQAAAEAgLS0AAIA/EhMIPRUAAIRDHQAAAEAgLS0AAIA/EhMINhUAAIRDHQAAAEAgLS0AAIA/EhMIMRUAAIVDHQAAAEAgLS0AAIA/EhMINhUAAIZDHQAAAEAgLS0AAIA/EhMIPRUAAIZDHQAAAEAgLS0AAIA/EhMIMRUAAIdDHQAAAEAgLS0AAIA/EhMILRUAAIhDHQAAAEAgLS0AAIA/EhMIIRUAAIhDHQAAAEAgLS0AAIA/EhMILRUAAIlDHQAAAEAgLS0AAIA/EhMINBUAAIpDHQAAAEAgLS0AAIA/EhMIORUAAItDHQAAAEAgLS0AAIA/EhMIPRUAAIxDHQAAAEAgLS0AAIA/EhMINBUAAIxDHQAAAEAgLS0AAIA/EhMIORUAAI1DHQAAAEAgLS0AAIA/EhMINBUAAI5DHQAAAEAgLS0AAIA/EhMIPRUAAI5DHQAAAEAgLS0AAIA/EhMINBUAAI9DHQAAAEAgLS0AAIA/EhMILxUAAJBDHQAAAEAgLS0AAIA/EhMIIxUAAJBDHQAAAEAgLS0AAIA/EhMIMhUAAJFDHQAAAEAgLS0AAIA/EhMINhUAAJJDHQAAAEAgLS0AAIA/EhMIORUAAJNDHQAAAEAgLS0AAIA/EhMINhUAAJRDHQAAAEAgLS0AAIA/EhMIPhUAAJRDHQAAAEAgLS0AAIA/EhMIORUAAJVDHQAAAEAgLS0AAIA/EhMINhUAAJZDHQAAAEAgLS0AAIA/EhMIPhUAAJZDHQAAAEAgLS0AAIA/EhMINhUAAJdDHQAAAEAgLS0AAIA/EhMIMhUAAJhDHQAAAEAgLS0AAIA/EhMIJhUAAJhDHQAAAEAgLS0AAIA/EhMIMhUAAJlDHQAAAEAgLS0AAIA/EhMINhUAAJpDHQAAAEAgLS0AAIA/EhMIORUAAJtDHQAAAEAgLS0AAIA/EhMIORUAAJxDHQAAAEAgLS0AAIA/EhMIPRUAAJ1DHQAAAEAgLS0AAIA/EhMIORUAAJ5DHQAAAEAgLS0AAIA/EhMIORUAAJ9DHQAAAEAgLS0AAIA/EhMIKhUAAKBDHQAAAEAgLS0AAIA/EhMIHhUAAKBDHQAAAEAgLS0AAIA/EhMIKhUAAKFDHQAAAEAgLS0AAIA/EhMINhUAAKJDHQAAAEAgLS0AAIA/EhMIORUAAKNDHQAAAEAgLS0AAIA/EhMINhUAAKRDHQAAAEAgLS0AAIA/EhMIPRUAAKRDHQAAAEAgLS0AAIA/EhMIMRUAAKVDHQAAAEAgLS0AAIA/EhMINhUAAKZDHQAAAEAgLS0AAIA/EhMIPRUAAKZDHQAAAEAgLS0AAIA/EhMIMRUAAKdDHQAAAEAgLS0AAIA/EhMILRUAAKhDHQAAAEAgLS0AAIA/EhMILRUAAKlDHQAAAEAgLS0AAIA/EhMIIRUAAKhDHQAAAEAgLS0AAIA/EhMINBUAAKpDHQAAAEAgLS0AAIA/EhMIORUAAKtDHQAAAEAgLS0AAIA/EhMIPRUAAKxDHQAAAEAgLS0AAIA/EhMINBUAAKxDHQAAAEAgLS0AAIA/EhMIORUAAK1DHQAAAEAgLS0AAIA/EhMIPRUAAK5DHQAAAEAgLS0AAIA/EhMINBUAAK5DHQAAAEAgLS0AAIA/EhMINBUAAK9DHQAAAEAgLS0AAIA/EhMIMhUAALBDHQAAAEAgLS0AAIA/EhMIJhUAALBDHQAAAEAgLS0AAIA/EhMIMhUAALFDHQAAAEAgLS0AAIA/EhMINhUAALJDHQAAAEAgLS0AAIA/EhMIORUAALNDHQAAAEAgLS0AAIA/EhMIORUAALRDHQAAAEAgLS0AAIA/EhMIPRUAALVDHQAAAEAgLS0AAIA/EhMIORUAALZDHQAAAEAgLS0AAIA/EhMIORUAALdDHQAAAEAgLS0AAIA/EhMILxUAALhDHQAAAEAgLS0AAIA/EhMIIxUAALhDHQAAAEAgLS0AAIA/EhMIMhUAALlDHQAAAEAgLS0AAIA/EhMINhUAALpDHQAAAEAgLS0AAIA/EhMIORUAALtDHQAAAEAgLS0AAIA/EhMINhUAALxDHQAAAEAgLS0AAIA/EhMIPhUAALxDHQAAAEAgLS0AAIA/EhMIORUAAL1DHQAAAEAgLS0AAIA/EhMIPhUAAL5DHQAAAEAgLS0AAIA/EhMINhUAAL5DHQAAAEAgLS0AAIA/EhMINhUAAL9DHQAAAEAgLS0AAIA/EhMIKhUAAMBDHQAAAEAgLS0AAIA/EhMIHhUAAMBDHQAAAEAgLS0AAIA/EhMIKhUAAMFDHQAAAEAgLS0AAIA/EhMINhUAAMJDHQAAAEAgLS0AAIA/EhMIORUAAMNDHQAAAEAgLS0AAIA/EhMINhUAAMRDHQAAAEAgLS0AAIA/EhMIPRUAAMRDHQAAAEAgLS0AAIA/EhMIMRUAAMVDHQAAAEAgLS0AAIA/EhMINhUAAMZDHQAAAEAgLS0AAIA/EhMIPRUAAMZDHQAAAEAgLS0AAIA/EhMIMRUAAMdDHQAAAEAgLS0AAIA/EhMILRUAAMhDHQAAAEAgLS0AAIA/EhMIIRUAAMhDHQAAAEAgLS0AAIA/EhMILRUAAMlDHQAAAEAgLS0AAIA/EhMINBUAAMpDHQAAAEAgLS0AAIA/EhMIORUAAMtDHQAAAEAgLS0AAIA/EhMIPRUAAMxDHQAAAEAgLS0AAIA/EhMINBUAAMxDHQAAAEAgLS0AAIA/EhMIORUAAM1DHQAAAEAgLS0AAIA/EhMIPRUAAM5DHQAAAEAgLS0AAIA/EhMINBUAAM5DHQAAAEAgLS0AAIA/EhMINBUAAM9DHQAAAEAgLS0AAIA/EhMILxUAANBDHQAAAEAgLS0AAIA/EhMIIxUAANBDHQAAAEAgLS0AAIA/EhMIMhUAANFDHQAAAEAgLS0AAIA/EhMINhUAANJDHQAAAEAgLS0AAIA/EhMIORUAANNDHQAAAEAgLS0AAIA/EhMIPhUAANRDHQAAAEAgLS0AAIA/EhMINhUAANRDHQAAAEAgLS0AAIA/EhMITBUAAMxDHQAAAEAgLi0AAIA/EhMISRUAAMxDHQAAAEAgLi0AAIA/EhMIRRUAAMxDHQAAAEAgLi0AAIA/EhMIThUAAM1DHQAAAEAgLi0AAIA/EhMITBUAAM5DHQAAAEAgLi0AAIA/EhMISRUAAM1DHQAAAEAgLi0AAIA/EhMISRUAAM5DHQAAAEAgLi0AAIA/EhMIShUAAM9DHQAAAEAgLi0AAIA/EhMIRxUAAM9DHQAAAEAgLi0AAIA/EhMIRRUAAM1DHQAAAEAgLi0AAIA/EhMIRRUAAM5DHQAAAEAgLi0AAIA/EhMIRRUAAM9DHQAAAEAgLi0AAIA/EhMIShUAAN5DHQAAAEAgLi0AAIA/EhMISRUAAN9DHQAAAEAgLi0AAIA/EhMIRRUAAN5DHQAAAEAgLi0AAIA/EhMIRRUAAN9DHQAAAEAgLi0AAIA/EhMIQhUAAN5DHQAAAEAgLi0AAIA/EhMIQhUAAN9DHQAAAEAgLi0AAIA/EhMIORUAANVDHQAAAEAgLS0AAIA/EhMIPhUAANZDHQAAAEAgLS0AAIA/EhMINhUAANZDHQAAAEAgLS0AAIA/EhMINhUAANdDHQAAAEAgLS0AAIA/EhMIMhUAANhDHQAAAEAgLS0AAIA/EhMIJhUAANhDHQAAAEAgLS0AAIA/EhMIMhUAANlDHQAAAEAgLS0AAIA/EhMINhUAANpDHQAAAEAgLS0AAIA/EhMIORUAANtDHQAAAEAgLS0AAIA/EhMIORUAANxDHQAAAEAgLS0AAIA/EhMIPRUAAN1DHQAAAEAgLS0AAIA/EhMIORUAAN5DHQAAAEAgLS0AAIA/EhMIORUAAN9DHQAAAEAgLS0AAIA/EhMIKhUAAOBDHQAAAEAgLS0AAIA/EhMIHhUAAOBDHQAAAEAgLS0AAIA/EhMIKhUAAOFDHQAAAEAgLS0AAIA/EhMINhUAAOJDHQAAAEAgLS0AAIA/EhMIORUAAONDHQAAAEAgLS0AAIA/EhMIPRUAAORDHQAAAEAgLS0AAIA/EhMINhUAAORDHQAAAEAgLS0AAIA/EhMIMRUAAOVDHQAAAEAgLS0AAIA/EhMINhUAAOZDHQAAAEAgLS0AAIA/EhMIPRUAAOZDHQAAAEAgLS0AAIA/EhMIMRUAAOdDHQAAAEAgLS0AAIA/EhMILRUAAOhDHQAAAEAgLS0AAIA/EhMILRUAAOlDHQAAAEAgLS0AAIA/EhMIIRUAAOhDHQAAAEAgLS0AAIA/EhMINBUAAOpDHQAAAEAgLS0AAIA/EhMIORUAAOtDHQAAAEAgLS0AAIA/EhMINBUAAOxDHQAAAEAgLS0AAIA/EhMIPRUAAOxDHQAAAEAgLS0AAIA/EhMIORUAAO1DHQAAAEAgLS0AAIA/EhMIPRUAAO5DHQAAAEAgLS0AAIA/EhMINBUAAO5DHQAAAEAgLS0AAIA/EhMINBUAAO9DHQAAAEAgLS0AAIA/EhMIMhUAAPBDHQAAAEAgLS0AAIA/EhMIMhUAAPFDHQAAAEAgLS0AAIA/EhMIJhUAAPBDHQAAAEAgLS0AAIA/EhMINhUAAPJDHQAAAEAgLS0AAIA/EhMIORUAAPNDHQAAAEAgLS0AAIA/EhMIORUAAPRDHQAAAEAgLS0AAIA/EhMIPRUAAPVDHQAAAEAgLS0AAIA/EhMIORUAAPZDHQAAAEAgLS0AAIA/EhMIORUAAPdDHQAAAEAgLS0AAIA/EhMILxUAAPhDHQAAAEAgLS0AAIA/EhMIIxUAAPhDHQAAAEAgLS0AAIA/EhMIMhUAAPlDHQAAAEAgLS0AAIA/EhMINhUAAPpDHQAAAEAgLS0AAIA/EhMIORUAAPtDHQAAAEAgLS0AAIA/EhMINhUAAPxDHQAAAEAgLS0AAIA/EhMIPhUAAPxDHQAAAEAgLS0AAIA/EhMIORUAAP1DHQAAAEAgLS0AAIA/EhMIPhUAAP5DHQAAAEAgLS0AAIA/EhMINhUAAP5DHQAAAEAgLS0AAIA/EhMINhUAAP9DHQAAAEAgLS0AAIA/EhMIORUAAIBAHQAAgEAgPS0AAIA/EhMIPRUAAABBHQAA0EEgPS0AAIA/EhMIQBUAAABBHQAA0EEgPS0AAIA/EhMINBUAAABBHQAA0EEgPS0AAIA/EhMIQhUAAAhCHQAAgEAgPS0AAIA/EhMIQBUAABBCHQAAgEAgPS0AAIA/EhMIPhUAABhCHQAAgEAgPS0AAIA/EhMIPRUAACBCHQAAwEEgPS0AAIA/EhMINBUAACBCHQAAwEEgPS0AAIA/EhMIORUAAIhCHQAAgEAgPS0AAIA/EhMIPRUAAJRCHQAAwEEgPS0AAIA/EhMINBUAAJBCHQAA0EEgPS0AAIA/EhMIQBUAAJBCHQAA0EEgPS0AAIA/EhMIQhUAAMRCHQAAgEAgPS0AAIA/EhMIQBUAAMhCHQAAgEAgPS0AAIA/EhMIPhUAAMxCHQAAgEAgPS0AAIA/EhMIPRUAANBCHQAA4EEgPS0AAIA/EhMINBUAANBCHQAA4EEgPS0AAIA/EhMIPhUAAARDHQAAgEAgPS0AAIA/EhMIOxUAAAhDHQAAgEEgPS0AAIA/EhMIMhUAAARDHQAAgEAgPS0AAIA/EhMIOBUAAAhDHQAAgEEgPS0AAIA/EhMIKBUAAAZDHQAAkEEgPS0AAIA/EhMIOxUAABhDHQAAgEEgPS0AAIA/EhMIOBUAABhDHQAAgEEgPS0AAIA/EhMIOxUAAChDHQAAoEEgPS0AAIA/EhMIOBUAAChDHQAAoEEgPS0AAIA/EhMIPRUAAHxDHQAAgEAgPS0AAIA/EhMIOxUAAIBDHQAAMEEgPS0AAIA/EhMIPRUAADxDHQAAgEIgPS0AAIA/EhMIORUAADxDHQAAgEIgPS0AAIA/EhMIMRUAAHxDHQAAgEAgPS0AAIA/EhMIOBUAAIBDHQAAMEEgPS0AAIA/EhMIOxUAAIVDHQAAgEAgPS0AAIA/EhMIOBUAAIVDHQAAgEAgPS0AAIA/EhMIOxUAAIdDHQAAIEEgPS0AAIA/EhMIOBUAAIdDHQAAIEEgPS0AAIA/EhMIPRUAAIxDHQAAgEAgPS0AAIA/EhMIORUAAIxDHQAAgEAgPS0AAIA/EhMIPRUAAI5DHQAAgEAgPS0AAIA/EhMIORUAAI5DHQAAgEAgPS0AAIA/EhMIOxUAAJBDHQAAIEEgPS0AAIA/EhMIOBUAAJBDHQAAIEEgPS0AAIA/EhMIPRUAAJVDHQAAgEAgPS0AAIA/EhMIPRUAAJdDHQAAIEEgPS0AAIA/EhMIORUAAJVDHQAAgEAgPS0AAIA/EhMIOxUAAKBDHQAAIEEgPS0AAIA/EhMIOBUAAKBDHQAAIEEgPS0AAIA/EhMIORUAAJdDHQAAIEEgPS0AAIA/EhMIPRUAAJxDHQAAAEEgPS0AAIA/EhMIORUAAJxDHQAAAEEgPS0AAIA/EhMIPRUAAKVDHQAAQEAgPS0AAIA/EhMIOxUAgKVDHQAAQEAgPS0AAIA/EhMIORUAAKVDHQAAQEAgPS0AAIA/EhMIOBUAAKdDHQAAIEEgPS0AAIA/EhMIPRUAAKxDHQAAAEEgPS0AAIA/EhMIORUAAKxDHQAAAEEgPS0AAIA/EhMIPRUAALBDHQAAAEEgPS0AAIA/EhMIORUAALRDHQAAgEAgPS0AAIA/EhMIPRUAALRDHQAAQEEgPS0AAIA/EhMIORUAALBDHQAAAEEgPS0AAIA/EhMIORUAALZDHQAAAEEgPS0AAIA/EhMIOxUAALpDHQAAQEEgPS0AAIA/EhMIOBUAALpDHQAAQEEgPS0AAIA/EhMIPRUAAMBDHQAAIEEgPS0AAIA/EhMIORUAAMBDHQAAIEEgPS0AAIA/EhMIPRUAAMVDHQAAgEAgPS0AAIA/EhMIORUAAMVDHQAAgEAgPS0AAIA/EhMIPRUAAMdDHQAAgEAgPS0AAIA/EhMIORUAAMdDHQAAgEAgPS0AAIA/EhMIOxUAAMlDHQAAYEEgPS0AAIA/EhMIOBUAAMlDHQAAYEEgPS0AAIA/EhMIPRUAANBDHQAAIEEgPS0AAIA/EhMIORUAANBDHQAAIEEgPS0AAIA/EhMIOxUAANVDHQAAgEAgPS0AAIA/EhMIPRUAANxDHQAAAEEgPS0AAIA/EhMIOxUAAOBDHQAAIEEgPS0AAIA/EhMIORUAANxDHQAAAEEgPS0AAIA/EhMIOBUAAOBDHQAAIEEgPS0AAIA/EhMIOBUAANVDHQAAgEAgPS0AAIA/EhMIOxUAANdDHQAAIEEgPS0AAIA/EhMIOBUAANdDHQAAIEEgPS0AAIA/EhMIPRUAAOVDHQAAQEAgPS0AAIA/EhMIOBUAAOhDHQAAAEEgPS0AAIA/EhMIORUAAOVDHQAAQEAgPS0AAIA/EhMIOxUAAOxDHQAAAEEgPS0AAIA/EhMIOBUAAOxDHQAAAEEgPS0AAIA/EhMIPRUAAPBDHQAAgEEgPS0AAIA/EhMIORUAAPBDHQAAgEEgPS0AAIA/EhMIMRUAAPBDHQAAgEEgPS0AAIA/EhMIOxUAAOZDHQAAQEEgPS0AAIA/EhMIOxUAAKdDHQAAIEEgPS0AAIA/EhMITBUAAIBDHQAAAEEgFy0AAIA/EhMISRUAAIBDHQAAAEEgFy0AAIA/EhMIRRUAAIBDHQAAAEEgFy0AAIA/EhMITBUAAIVDHQAAgEAgFy0AAIA/EhMISRUAAIVDHQAAgEAgFy0AAIA/EhMITBUAAIdDHQAAgEAgFy0AAIA/EhMISRUAAIdDHQAAgEAgFy0AAIA/EhMITBUAAIxDHQAAAEAgFy0AAIA/EhMISRUAAIxDHQAAAEAgFy0AAIA/EhMIThUAAI1DHQAAAEAgFy0AAIA/EhMISRUAAI1DHQAAAEAgFy0AAIA/EhMIRRUAAIxDHQAAAEAgFy0AAIA/EhMIRRUAAI1DHQAAAEAgFy0AAIA/EhMIRRUAAI5DHQAAAEAgFy0AAIA/EhMIRRUAAI9DHQAAAEAgFy0AAIA/EhMIRxUAAI9DHQAAAEAgFy0AAIA/EhMISRUAAI5DHQAAAEAgFy0AAIA/EhMITBUAAI5DHQAAAEAgFy0AAIA/EhMIShUAAI9DHQAAAEAgFy0AAIA/EhMISRUAAJBDHQAAAEEgFy0AAIA/EhMIRRUAAJBDHQAAAEEgFy0AAIA/EhMIQhUAAJBDHQAAAEEgFy0AAIA/EhMISRUAAJVDHQAAgEAgFy0AAIA/EhMISRUAAJdDHQAAgEAgFy0AAIA/EhMIRRUAAJVDHQAAgEAgFy0AAIA/EhMIRRUAAJdDHQAAgEAgFy0AAIA/EhMISRUAAJxDHQAAgEAgFy0AAIA/EhMIRRUAAJxDHQAAgEAgFy0AAIA/EhMIQhUAAJxDHQAAgEAgFy0AAIA/EhMIRxUAAKBDHQAAAEEgFy0AAIA/EhMIRRUAAKBDHQAAAEEgFy0AAIA/EhMIQhUAAKBDHQAAAEEgFy0AAIA/EhMIShUAAJ5DHQAAAEAgFy0AAIA/EhMISRUAAJ9DHQAAAEAgFy0AAIA/EhMIRRUAAJ9DHQAAAEAgFy0AAIA/EhMIRRUAAJ5DHQAAAEAgFy0AAIA/EhMIQhUAAJ5DHQAAAEAgFy0AAIA/EhMIQhUAAJ9DHQAAAEAgFy0AAIA/EhMIRxUAgKVDHQAAAEAgFy0AAIA/EhMIRxUAAKdDHQAAAEAgFy0AAIA/EhMISRUAAKVDHQAAAEAgFy0AAIA/EhMIRRUAAKVDHQAAAEAgFy0AAIA/EhMISRUAgKZDHQAAAEAgFy0AAIA/EhMIRRUAgKZDHQAAAEAgFy0AAIA/EhMISRUAAKxDHQAAAEEgFy0AAIA/EhMIRRUAAKxDHQAAAEEgFy0AAIA/EhMIQhUAAKxDHQAAAEEgFy0AAIA/EhMIQhUAALBDHQAAAEEgFy0AAIA/EhMIRRUAALBDHQAAAEEgFy0AAIA/EhMIRRUAgLBDHQAAAEEgFy0AAIA/EhMIRRUAALFDHQAAAEEgFy0AAIA/EhMIRRUAgLFDHQAAAEEgFy0AAIA/EhMIRRUAALJDHQAAAEEgFy0AAIA/EhMIRRUAgLdDHQAAgD8gFy0AAIA/EhMIRRUAALdDHQAAAEAgFy0AAIA/EhMIRRUAgLZDHQAAQEAgFy0AAIA/EhMIRRUAALZDHQAAgEAgFy0AAIA/EhMIRRUAgLVDHQAAoEAgFy0AAIA/EhMIRRUAALVDHQAAwEAgFy0AAIA/EhMIRRUAgLRDHQAA4EAgFy0AAIA/EhMIRRUAALRDHQAAAEEgFy0AAIA/EhMIRRUAgLNDHQAAAEEgFy0AAIA/EhMIRRUAALNDHQAAAEEgFy0AAIA/EhMIRRUAgLJDHQAAAEEgFy0AAIA/EhMIQhUAALRDHQAAgEAgFy0AAIA/EhMIQhUAALZDHQAAgEAgFy0AAIA/EhMITBUAAMVDHQAAgEAgFy0AAIA/EhMISRUAAMVDHQAAgEAgFy0AAIA/EhMITBUAAMdDHQAAgEAgFy0AAIA/EhMISRUAAMdDHQAAgEAgFy0AAIA/EhMISRUAANBDHQAAAEEgFy0AAIA/EhMIRRUAANBDHQAAAEEgFy0AAIA/EhMIQhUAANBDHQAAAEEgFy0AAIA/EhMITBUAAMBDHQAAAEEgFy0AAIA/EhMISRUAAMBDHQAAAEEgFy0AAIA/EhMIRRUAAMBDHQAAAEEgFy0AAIA/EhMISRUAANVDHQAAgEAgFy0AAIA/EhMIRRUAANVDHQAAgEAgFy0AAIA/EhMISRUAANdDHQAAgEAgFy0AAIA/EhMIRRUAANdDHQAAgEAgFy0AAIA/EhMIRRUAANxDHQAAgEAgFy0AAIA/EhMIQhUAANxDHQAAgEAgFy0AAIA/EhMISRUAANxDHQAAgEAgFy0AAIA/EhMIRRUAAPBDHQAAgEEgFy0AAIA/EhMISRUAAOxDHQAAAEEgFy0AAIA/EhMIRRUAAOxDHQAAAEEgFy0AAIA/EhMIQhUAAOxDHQAAAEEgFy0AAIA/EhMIQhUAAPBDHQAAAEEgFy0AAIA/EhMIQhUAAPRDHQAAAEEgFy0AAIA/EhMIRxUAAOBDHQAAAEEgFy0AAIA/EhMIRRUAAOBDHQAAAEEgFy0AAIA/EhMIQhUAAOBDHQAAAEEgFy0AAIA/EhMIThUAAM1DHQAAAEAgFy0AAIA/EhMITBUAAM5DHQAAAEAgFy0AAIA/EhMISRUAAM5DHQAAAEAgFy0AAIA/EhMIShUAAM9DHQAAAEAgFy0AAIA/EhMIRxUAAM9DHQAAAEAgFy0AAIA/EhMITBUAAMxDHQAAAEAgFy0AAIA/EhMISRUAAMxDHQAAAEAgFy0AAIA/EhMISRUAAM1DHQAAAEAgFy0AAIA/EhMIRRUAAMxDHQAAAEAgFy0AAIA/EhMIRRUAAM1DHQAAAEAgFy0AAIA/EhMIRRUAAM5DHQAAAEAgFy0AAIA/EhMIRRUAAM9DHQAAAEAgFy0AAIA/EhMIShUAAN5DHQAAAEAgFy0AAIA/EhMISRUAAN9DHQAAAEAgFy0AAIA/EhMIRRUAAN9DHQAAAEAgFy0AAIA/EhMIRRUAAN5DHQAAAEAgFy0AAIA/EhMIQhUAAN5DHQAAAEAgFy0AAIA/EhMIQhUAAN9DHQAAAEAgFy0AAIA/EhMIRxUAgOVDHQAAAEAgFy0AAIA/EhMIRxUAAOdDHQAAAEAgFy0AAIA/EhMISRUAgOZDHQAAAEAgFy0AAIA/EhMISRUAAOVDHQAAAEAgFy0AAIA/EhMIRRUAAOVDHQAAAEAgFy0AAIA/EhMIRRUAgOZDHQAAAEAgFy0AAIA/';
+    leaveEditMode();    loadDataProto(data);
+    song.id = 4843763;
+    song.basedon = 4843763;
+    song.version = 4;
+    song.deleted = 0;
+    createSynth(kSynthBaseId);  // Create initial synthesizer
+    owner = 202494;
+        var playbutton = document.getElementById('playbutton');
+    playbutton.style.display="block";
+    let play = () => {
+        if(!loadingSounds) {
+          if (!onHashChange()) {
+            song.play(0);
+          }
+        }
+        else {
+            autoplay = true;
+        }
+        return false;
+    };
+    $(playbutton).on('vmousedown', play);
+    document.onkeydown = function(event) {
+      if (event.keyCode == 32 && document.activeElement.tagName != 'TEXTAREA' && document.activeElement.tagName != 'INPUT') { // space
+        play();
+        document.onkeydown = null;
+      }
+    };
+            container.scrollTop = container.scrollHeight/2-200;
+    dragScroll(document.querySelector('.info-sidebar-featured-list'));
+};
+</script>
+<div id="sequencer_main_row">
+<div id="sequencer">
+<div id="playbutton"></div>
+<div id="share" style="display: none"><i class="fas fa-times" id="btn_close"></i><span id="sharelink">Link to this sequence: 4843763</span></div>
+<div id="instrument_options" style="display: none">
+  <div id="instrument_options_tabs">
+    <div id="instrument_options_tab_simple" class="selected">Simple</div>
+    <div id="instrument_options_tab_advanced">Advanced</div>
+    <div id="instrument_options_tab_synth">Synthesizer</div>
+  </div>
+  <div id="instrument_options_simple"></div>
+  <div id="instrument_options_advanced" style="display: none">
+    <div class="instrument_options_advanced_row">
+      <div id="instrument_options_advanced_chip" title="Click to change color">
+        <input id="instrument_options_advanced_color" type="text" data-coloris>
+      </div>
+      <div id="instrument_options_advanced_title" title="Click to change name">Instrument name</div>
+      <input type="text" id="instrument_options_advanced_title_edit" class="hidden"/>
+      <div id="instrument_options_advanced_lock" class="instrument_lock btn" onclick="lockInstrumentButton(instrument, event)"><i id="instrument_options_advanced_lock_btn"class="fas fa-lock-open-alt"></i></div>
+      <div class="instrument_options_advanced_spacer"></div>
+      <div id="instrument_options_copy" class="button" onclick="copyInstrumentSettings(instrument)">Copy</div>
+      <div id="instrument_options_load" class="button" onclick="pasteInstrumentSettings(instrument)">Load</div>
+      <div id="instrument_options_clone" class="button" onclick="cloneInstrument(instrument)">Clone</div>
+      <div id="instrument_options_delete" class="button" onclick="deleteClonedInstrument(instrument)">Delete</div>
+    </div>
+    <div class="instrument_options_advanced_row">
+      <div id="instrument_options_mute" class="button" onclick="muteInstrument(instrument)">Mute <i class="fa-solid fa-volume-xmark"></i></div>
+      <div id="instrument_options_solo" class="button" onclick="soloInstrument(instrument)">Solo <i class="fa-solid fa-microphone-stand"></i></div>
+      <div style="display:flex; justify-content:flex-end; flex:1;">
+        <div id="instrument_options_reset" class="button" onclick="resetSettings(instrument)">Reset <i class="fa-solid fa-rotate-reverse"></i></div>
+      </div>
+    </div>
+    <div class="instrument_options_advanced_row">
+      <div class="instrument_options_advanced_label">Volume</div>
+      <div class="slider_line">
+        <div class="slider_center"></div>
+        <input id="instrument_options_advanced_volume" class="slider" type="range" min="0" max="2" step="0.01" oninput="setInitialInstrumentVolume(instrument, this.value)">
+      </div>
+      <div id="instrument_options_advanced_delay" class="button" onclick="selectDelay(instrument)">Delay</div>
+    </div>
+    <div class="instrument_options_advanced_row">
+      <div class="instrument_options_advanced_label">Panning</div>
+      <div class="slider_line">
+        <div class="slider_center"></div>
+        <input id="instrument_options_advanced_pan" class="slider" type="range" min="-1" max="1" step="0.01" oninput="setPan(instrument, this.value)">
+      </div>
+    </div>
+    <div class="instrument_options_advanced_row">
+      <div class="instrument_options_advanced_label">Detune</div>
+      <div class="slider_line">
+        <div class="slider_center"></div>
+        <input id="instrument_options_advanced_detune" class="slider detune_slider" type="range" min="-1200" max="1200" step="100" oninput="setDetune(instrument, this.value)">
+      </div>
+    </div>
+    <div class="instrument_options_advanced_row">
+      <div id="instrument_options_advanced_reverb" class="button" onclick="selectReverb(instrument)">Reverb</div>
+      <select id="instrument_options_advanced_reverb_select"></select>
+      <div id="instrument_options_advanced_reverb_volume_wrap" class="slider_line options-disabled">
+        <input id="instrument_options_advanced_reverb_volume" class="slider" type="range" min="0" max="1" step="0.01" value="1" oninput="setReverbVolume(instrument, this.value)">
+      </div>
+    </div>
+    <div class="instrument_options_advanced_row">
+      <div id="instrument_options_advanced_distort" class="button" onclick="selectDistort(instrument)">Distort</div>
+      <select id="instrument_options_advanced_distort_select"></select>
+      <div id="instrument_options_advanced_distort_volume_wrap" class="slider_line options-disabled">
+        <input id="instrument_options_advanced_distort_volume" class="slider" type="range" min="0" max="1" step="0.01" value="0" oninput="setDistortVolume(instrument, this.value)">
+      </div>
+    </div>
+    <div id="instrument_options_advanced_eq">
+      <div class="button" onclick="selectEq(instrument)">Equalizer</div>
+      <div id="instrument_options_advanced_eq_sliders">
+        <div class="instrument_options_advanced_eq_row">
+          <div class="instrument_options_advanced_label">High</div>
+          <div class="slider_line with_warning">
+            <div class="slider_center"></div>
+            <input id="instrument_options_advanced_eq_high" class="slider" type="range" min="-48" max="48" step="1" oninput="setEqHigh(instrument, parseFloat(this.value))">
+          </div>
+        </div>
+        <div class="instrument_options_advanced_eq_row">
+          <div class="instrument_options_advanced_label">Mid</div>
+          <div class="slider_line with_warning">
+            <div class="slider_center"></div>
+            <input id="instrument_options_advanced_eq_mid" class="slider" type="range" min="-48" max="48" step="1" oninput="setEqMid(instrument, parseFloat(this.value))">
+          </div>
+        </div>
+        <div class="instrument_options_advanced_eq_row">
+          <div class="instrument_options_advanced_label">Low</div>
+          <div class="slider_line with_warning">
+            <div class="slider_center"></div>
+            <input id="instrument_options_advanced_eq_low" class="slider" type="range" min="-48" max="48" step="1" oninput="setEqLow(instrument, parseFloat(this.value))">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="instrument_options_advanced_row">
+      <div id="instrument_options_advanced_bitcrusher" class="button" onclick="selectBitcrusher(instrument)">Bitcrusher</div>
+      <div id="bitcrusher_options" class="options-disabled">
+        <select id="instrument_options_bitcrusher_depth">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+          <option value="11">11</option>
+          <option value="12" selected>12</option>
+          <option value="13">13</option>
+          <option value="14">14</option>
+          <option value="15">15</option>
+          <option value="16">16</option>
+        </select>
+        <div class="slider_line">
+          <input id="instrument_options_advanced_bitcrusher_level" class="slider" type="range" min="0" max="1" step="0.01" value="0.5" oninput="setBitcrusherLevel(instrument, this.value)">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="instrument_options_synth" style="display: none">
+    <div class="instrument_options_synth_row">
+      <div id="instrument_options_synth_chip" class="instrument55"></div>
+      <div id="instrument_options_synth_title">Synthesizer</div>
+      <div class="instrument_options_synth_spacer"></div>
+    </div>
+    <div class="instrument_options_synth_row">
+      <svg width="64" height="64" viewBox="0 0 64 64"
+           xmlns="http://www.w3.org/2000/svg" id="instrument_options_synth_wave">
+        <g>
+          <rect x="0" y="0" width="64" height="64" fill="#333" stroke-width=".264583"/>
+        </g>
+        <path d="m 0 0v 64m-28-64v 64m 4-64v 64m 4-64v 64m 4-64v 64m 4-64v 64m 4-64v 64m 4-64v 64m 4-64v 64m 4-64v 64m
+           4-64v 64m 4-64v 64m 4-64v 64m 4-64v 64m 4-64v 64m 4-64v 64m 4-64v 64m 4-64v 64m 4-64v 64m 4-64v 64m 4-64v 64m
+            4-64v 64m 4-64v 64m 4-64v 64m 4-64v 64m-64-64h 64m-64 4h 64m-64 4h 64m-64 4h 64m-64 4h 64m-64 4h 64m-64 4h
+             64m-64 4h 64m-64 4h 64m-64 4h 64m-64 4h 64m-64 4h 64m-64 4h 64m-64 4h 64m-64 4h 64m-64 4h 64" fill="none"
+              stroke="#4e4646" stroke-width=".2"/>
+        <!-- Sine by default -->
+        <path d="m0 32c16-32 32 0 32 0s16 32 32 0" fill="none" stroke="#fbab30"
+              stroke-linecap="round" stroke-width=".765" id="instrument_options_synth_wavepath" />
+      </svg>
+      <select id="instrument_options_synth_type">
+        <option value="sine">Sine</option>
+        <option value="square">Square</option>
+        <option value="sawtooth">Sawtooth</option>
+        <option value="triangle">Triangle</option>
+        <option value="noise">Noise</option>
+      </select>
+    </div>
+    <div class="instrument_options_synth_row">
+      <select id="instrument_options_synth_filter_type">
+        <option value="0">Low pass</option>
+        <option value="1">Band pass</option>
+        <option value="2">High pass</option>
+      </select>
+      <div class="slider_line">
+        <input id="instrument_options_synth_filter" class="slider" type="range" min="0" max="20000" step="1" oninput="setSynthFilter(instrument, parseFloat(this.value))">
+      </div>
+    </div>
+    <div class="instrument_options_synth_row">
+      <div class="instrument_options_synth_label instrument_options_synth_label_q">Resonance (Q)</div>
+      <div class="slider_line">
+        <input id="instrument_options_synth_filter_q" class="slider" type="range" min="0" max="20" step="1" oninput="setSynthFilterQ(instrument, parseFloat(this.value))">
+      </div>
+    </div>
+    <div class="instrument_options_synth_row">
+      <svg width="64" height="64" viewBox="0 0 64 64"
+           xmlns="http://www.w3.org/2000/svg" id="instrument_options_synth_lfo_graph">
+        <g>
+          <rect x="0" y="0" width="64" height="64" fill="#333" stroke-width=".264583"/>
+        </g>
+        <path d="m 0 0v 64m-28-64v 64m 4-64v 64m 4-64v 64m 4-64v 64m 4-64v 64m 4-64v 64m 4-64v 64m 4-64v 64m 4-64v 64m
+           4-64v 64m 4-64v 64m 4-64v 64m 4-64v 64m 4-64v 64m 4-64v 64m 4-64v 64m 4-64v 64m 4-64v 64m 4-64v 64m 4-64v 64m
+            4-64v 64m 4-64v 64m 4-64v 64m 4-64v 64m-64-64h 64m-64 4h 64m-64 4h 64m-64 4h 64m-64 4h 64m-64 4h 64m-64 4h
+             64m-64 4h 64m-64 4h 64m-64 4h 64m-64 4h 64m-64 4h 64m-64 4h 64m-64 4h 64m-64 4h 64m-64 4h 64" fill="none"
+              stroke="#4e4646" stroke-width=".2"/>
+        <g id="synth_lfo_graph_lines"></g>
+        <path d="" fill="none" stroke="#15aedc"
+              stroke-linecap="round" stroke-width=".765" id="instrument_options_synth_lfopath" />
+      </svg>
+      <div class="instrument_options_synth_lfo_osc">
+        <button id="lfo_osc_sine" class="lfo_osc_option lfo_osc_selected" onclick="setLFOOsc(instrument, 'sine')">Sn</button>
+        <button id="lfo_osc_square" class="lfo_osc_option" onclick="setLFOOsc(instrument, 'square')">Sq</button>
+        <button id="lfo_osc_sawtooth" class="lfo_osc_option" onclick="setLFOOsc(instrument, 'sawtooth')">St</button>
+        <button id="lfo_osc_triangle" class="lfo_osc_option" onclick="setLFOOsc(instrument, 'triangle')">T</button>
+      </div>
+      <div class="instrument_options_synth_lfo">
+        <div class="instrument_options_synth_label instrument_options_synth_label_lfo">LFO</div>
+        <select id="instrument_options_lfo_target">
+          <option value="0">Volume</option>
+          <option value="1">Pitch</option>
+          <option value="2">Filter</option>
+        </select>
+        <div id="instrument_options_synth_lfo_e" class="button" onclick="selectLFO(instrument)">1/4</div>
+        <select id="instrument_options_synth_lfo_select">
+          <option value="CUSTOM">Custom...</option>
+          <option value="1/1">1</option>
+          <option value="1/2">1/2</option>
+          <option value="1/3">1/3</option>
+          <option value="1/4" selected>1/4</option>
+          <option value="1/6">1/6</option>
+          <option value="1/8">1/8</option>
+          <option value="1/12">1/12</option>
+          <option value="1/16">1/16</option>
+          <option value="1/32">1/32</option>
+        </select>
+        <div class="slider_line">
+          <input id="instrument_options_synth_lfo_intensity" class="slider" type="range" min="0" max="100" step="1" oninput="setLFOIntensity(instrument, parseFloat(this.value))">
+        </div>
+        <div class="synth_lfo_hz">
+          <input id="instrument_options_synth_lfo_hz" onchange="setLFORate(instrument, this.value, true)">
+        </div>
+      </div>
+    </div>
+    <div class="instrument_options_synth_row">
+      <div id="instrument_options_synth_adsr_e" class="button" onclick="selectADSR(instrument)">Envelope</div>
+      <svg width="160" height="72" viewBox="0 0 160 72"
+           xmlns="http://www.w3.org/2000/svg" id="instrument_options_synth_adsr_graph">
+        <g>
+          <rect x="0" y="0" width="160" height="72" fill="#333" stroke-width=".264583"/>
+          <rect x="0" y="0" width="120" height="72" fill="#3a3a3a" stroke-width="0"/>
+        </g>
+        <g id="synth_adsr_graph_lines"></g>
+        <g id="synth_adsr_graph_points"></g>
+        <path d="" fill="#a6d94822" stroke="#a6d948"
+              stroke-linecap="round" stroke-width=".765" id="instrument_options_synth_adsrpath" />
+      </svg>
+      <div id="instrument_options_synth_adsr" class="adsr_disabled">
+        <div class="slider_line_v">
+          <p>A </p><input id="instrument_options_synth_attack" class="slider_v" type="range" value="0" min="0" max="1" step="0.02" oninput="setAttack(instrument, parseFloat(this.value))">
+        </div>
+        <div class="slider_line_v">
+          <p>D </p><input id="instrument_options_synth_decay" class="slider_v" type="range" value="0" min="0" max="1" step="0.02" oninput="setDecay(instrument, parseFloat(this.value))">
+        </div>
+        <div class="slider_line_v">
+          <p>S </p><input id="instrument_options_synth_sustain" class="slider_v" type="range" value="0" min="0" max="1" step="0.02" oninput="setSustain(instrument, parseFloat(this.value))">
+        </div>
+        <div class="slider_line_v">
+          <p>R </p><input id="instrument_options_synth_release" class="slider_v" type="range" value="0" min="0" max="1" step="0.02" oninput="setRelease(instrument, parseFloat(this.value))">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<template id="template-marker-editor">
+  <div id="marker_editor_marker_list">
+    <div id="marker_editor_markers"></div>
+    <div id="marker_editor_add">
+      <div class="btn" id="btn_edit_markers_add" title="Add" onclick="markerEditorAdd()"><i class="far fa-plus"></i></div>
+      <div class="box_input" id="marker_type_input"><select id="marker_type"></select></div>
+      <div class="box_input" id="marker_instrument_input" style="visibility: hidden;"><div id="marker_instrument_wrapper"></div></div>
+    </div>
+  </div>
+</template>
+<template id="template-user-settings">
+  <div class="user_settings_content">
+      <div class="user_settings_row"><input id="user_setting_5" type="checkbox" onclick="updateUserSetting('5', 'disable_webgl', $('#user_setting_5').is(':checked') ? 'true' : 'false')"><label id="user_setting_5" for="user_setting_5">Disable WebGL (requires refresh)</label></div><div class="user_settings_row"><input id="user_setting_1" type="checkbox" checked onclick="updateUserSetting('1', 'remember_length', $('#user_setting_1').is(':checked') ? 'true' : 'false')"><label id="user_setting_1" for="user_setting_1">Remember last note length</label></div><div class="user_settings_row"><input id="user_setting_2" type="checkbox" checked onclick="updateUserSetting('2', 'remember_volume', $('#user_setting_2').is(':checked') ? 'true' : 'false')"><label id="user_setting_2" for="user_setting_2">Remember last note volume</label></div><div class="user_settings_row"><input id="user_setting_3" type="checkbox" onclick="updateUserSetting('3', 'custom_cursor', $('#user_setting_3').is(':checked') ? 'true' : 'false')"><label id="user_setting_3" for="user_setting_3">Show custom cursors</label></div>  </div>
+</template>
+<div id="top-bar-container">
+  <div id="titlebar">
+      <div class="left">
+          <div id="view_mode_play" class="play" title="Play" >
+              <i id="view_mode_play_icon" class="fas fa-play"></i>
+          </div>
+          <div class="text" >
+              champagne coast by <a href="/members/202494">f.ev4</a>          </div>
+          <div class="btn_edit preview_mode_btn" title="Enter edit mode" ><i class="far fa-edit"></i></div>
+          <div class="btn_graphics preview_mode_btn" title="Toggle fast graphics"><i class="far fa-tachometer-fast"></i></div>
+          <div class="spacer"></div>
+          <div class="btn_zoomout preview_mode_btn" title="Zoom out"><i class="far fa-search-minus"></i></div>
+          <div class="btn_zoomin preview_mode_btn" title="Zoom in"><i class="far fa-search-plus"></i></div>
+      </div>
+  </div>
+  <div id="toolbar_container" class="dragscroll">
+  <div class="dragscroll-wrapper">
+  <div id="toolbar_element" class="dragscroll-content" style="display: flex">
+      <div>
+          <div id="play_small" class="play" title="Play">
+              <i id="play_small_icon" class="fas fa-play"></i>
+          </div>
+          <div class="box_label">
+              <span>BPM</span> <div class="box_input">
+                  <input type="text" id="bpm" size="3" maxlength="3" autocomplete="off" data-lpignore="true" value="110" onchange="setInitialBPM(document.getElementById('bpm').value);"/>
+                  </div>
+          </div>
+          <div class="box_label">
+              <span>Title</span> <div class="box_input" id="title_box_input">
+                  <input type="text" id="title" size="32" maxlength="128" autocomplete="off" data-lpignore="true" value="champagne coast"/>
+                  </div>
+          </div>
+          <div class="btn" id="mode_draw" title="Draw"><i class="far fa-edit"></i></div>
+          <div class="btn" id="mode_edit" title="Select"><i class="fas fa-mouse-pointer"></i></div>
+          <div class="btn" id="mode_erase" title="Erase"><i class="fas fa-eraser"></i></div>
+          <div class="spacer"></div>
+          <div id="instrument_select_box" class="box_label" style="position:relative"><span>Instrument</span>
+              <div class="box_input">
+                  <div id="instrument_select_wrapper"></div>
+              </div>
+          </div>
+          <div id="select-this" class="os-dropdown">
+            <button class="os-dropdown-btn"><i class="fas fa-music" title="Highlight this one (right click for options)"></i></button>
+            <ul class="os-dropdown-menu">
+              <li action="selectNotes()">Select/deselect notes</li>
+              <li action="selectMarkers()">Select/deselect markers</li>
+            </ul>
+          </div>
+          <div class="btn" id="btn_instrument_options" title="Show options">
+              <i class="far fa-sliders-h"></i>
+          </div>
+          <div class="spacer"></div>
+          <div class="btn" id="btn_cut" title="Cut"><i class="far fa-cut"></i></div>
+          <div class="btn" id="btn_copy" title="Copy"><i class="fas fa-copy"></i></div>
+          <div class="btn" id="btn_paste" title="Paste"><i class="fas fa-paste"></i></div>
+          <div class="btn" id="btn_selectall" title="Select all"><i></i></div>
+          <div class="spacer"></div>
+          <div class="btn btn_zoomout" title="Zoom out"><i class="far fa-search-minus"></i></div>
+          <div class="btn btn_zoomin" title="Zoom in"><i class="far fa-search-plus"></i></div>
+          <div class="spacer"></div>
+          <div class="btn" id="savelink" href="javascript:;" title="Save"><i class="fas fa-cloud-upload"></i></div>
+          <div id="save-options" class="os-dropdown">
+            <button class="os-dropdown-btn"><i class="fas fa-caret-down" title="Show options"></i></button>
+            <ul class="os-dropdown-menu">
+              <li action="save(false)">Save a copy</li>
+              <li action="saveOffline()">Save offline</li>
+              <li action="saveAudio(true)">Export MP3</li>
+              <li action="saveAudio(false)">Export WAV</li>
+              <li action="exportMidi()">Export MIDI</li>
+            </ul>
+          </div>
+          <div class="spacer"></div>
+          <div class="btn" id="btn_help" title="Show help"><i class="fas fa-question-circle"></i></div>
+          <div class="btn" id="btn_full_screen"><i class="fas fa-expand-wide" title="Full screen"></i></div>
+          <div id="tools-menu" class="os-dropdown">
+            <button class="os-dropdown-btn"><i class="far fa-ellipsis-v" title="More tools"></i></button>
+            <ul class="os-dropdown-menu">
+                <li action="toolsUpload()">Import MIDI/Sequence File</li>
+                <li action="toolsFastGraphics()">Fast graphics</li>
+                <li action="toolsInvert()">Invert</li>
+                <li action="toolsChangeKey()">Minor ⇄ Major</li>
+                <li action="toolsReverse()">Reverse Selection</li>
+                <li action="toolsHumanize()">Humanize Selection</li>
+                <li action="toolsLegatomize()">Legatomize Selection</li>
+                <li action="toolsFadeIn()">Fade In Selection</li>
+                <li action="toolsFadeOut()">Fade Out Selection</li>
+                <li action="toolsStretchNotes()">Stretch Selection</li>
+            </ul>
+          </div>
+      </div>
+  </div>
+  <div class="dragscroll-left"></div><div class="dragscroll-right">
+  </div>
+  </div>
+  </div>
+  <div id="top-bar-right">
+    <div id="volume"><i class="fas fa-volume"></i><div class="slider_line"><input id="volume_slider" class="slider" type="range" min="0" max="2" step="0.01" value="1"></div></div>    
+  </div>
+</div>
+<div id="message_wrapper">
+    <span id="message_text"></span>
+</div>
+<input type="file" id="file_upload_input" style="display: none" onchange="loadFileFromInputDialog()">
+<style>
+</style>
+<div id="sequencer_timeline_wrapper">
+    <div id="sequencer_timeline_options">
+        <div class="left">
+            <div id="btn_user_settings" title="Sequencer settings" onclick="openUserSettings()"><i class="fas fa-cog"></i></div>
+        </div>
+        <div id="timeline_option_measures" class="timeline_option_active" title="Show measure number"><i class="fas fa-ruler"></i></div>
+        <div id="timeline_option_time" class="timeline_option" title="Show time"><i class="fas fa-clock"></i></div>
+    </div>
+    <div id="sequencer_timeline">
+        <div id="sequencer_timeline_measures" oncontextmenu="return false;"></div>
+        <div id="sequencer_timeline_markers" oncontextmenu="return false;"></div>
+    </div>
+</div>
+<div id="sequencer_panel">
+    <div id="keyboard_wrapper_element">
+        <div id="keyboard_element"></div>
+    </div>
+    <div id="sequencer_panel_right">
+        <div id="sequencer_view">
+        </div>
+        <div id="playhead_wrapper">
+        </div>
+        <div id="sequencer_main" tabindex="0">
+            <div id="sequencer_inner">
+                <div id="selection_rect"></div>
+                <div id="wavesurfer_element" style="display:none"></div>
+                <div id="marker_bar" style="display:none"
+                    onmousedown="mouseDownMarkerBar(event)"
+                    oncontextmenu="return false;"></div>
+                <div id="marker_selection_rect" style="display:none"></div>
+            </div>
+        </div>
+        <div id="progress_bar_area"></div>
+    </div>
+</div>
+<div id="menus">
+    <div class="item">
+        <div class="box_label"><span>Grid</span>
+            <div class="box_input" id="grid_select_input">
+                <select id="grid_select">
+                    <option value="0.25">1</option>
+                    <option value="0.5">1/2</option>
+                    <option value="0.75">1/3</option>
+                    <option value="1" selected="selected">1/4</option>
+                    <option value="1.5">1/6</option>
+                    <option value="2">1/8</option>
+                    <option value="3">1/12</option>
+                    <option value="4">1/16</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <div class="item">
+        <div class="box_label"><span>Time signature</span>
+            <div class="box_input" id="time_sig_select_input">
+                <select id="time_sig_select">
+                    <option value="2">2/4</option>
+                    <option value="3">3/4</option>
+                    <option value="4" selected="selected">4/4</option>
+                    <option value="5">5/4</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <div class="item">
+        <div class="box_label"><span>Key (<a href="javascript:;" onclick="updateScale(song.notes);">Auto Detect</a>)</span>
+            <div class="box_input">
+                <select id="key_select"></select>
+            </div>
+        </div>
+    </div>
+    <div class="item">
+        <div class="box_label"><span>Auto Scroll</span>
+            <div class="box_input" id="scroll_select_input">
+                <select id="scroll_select">
+                    <option value="3">Follow</option>
+                    <option value="0">Smooth</option>
+                    <option value="1" selected="selected">Fast</option>
+                    <option value="2">Off</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <div class="item">
+        <div id="audio_track_link" title="You can play an audio file along with your sequence. It won't be saved, but can help you transcribe a song.">
+            <a class="linkbutton" style="float: left" href="javascript:;" onclick="showAudioTrackSelect()">Add Audio Track</a>
+        </div>
+        <div id="audio_track_loading" style="display:none">Loading audio file...</div>
+        <div id="audio_track" style="display:none">
+            <input id="audio_track_file" type="file" accept="audio/*" class="button">
+            <div id="audio_track_remove">
+                <a class="linkbutton" href="javascript:;" onclick="$('#wavesurfer_element').toggle();">Show/hide waveform</a><a class="linkbutton" href="javascript:;" onclick="removeAudioTrack()">Remove</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="bottom_left">
+  <div id="midi_button" class="bottom_left_button"><i class="fa-solid fa-piano-keyboard"></i></div>
+  <div id="record_button" class="bottom_left_button"></div>
+  <div id="quantize_button" class="bottom_left_button"></div>
+  <div id="key_filter_button" class="bottom_left_button"></div>
+  <div id="metronome_button" class="bottom_left_button"></div>
+  <div id="midi_button_tooltip" class="tooltip">
+    Connect a MIDI keyboard.
+  </div>
+  <div id="record_button_tooltip" class="tooltip">
+      Record keyboard and MIDI inputs.
+  </div>
+  <div id="quantize_button_tooltip" class="tooltip">
+      Snap recorded notes to the grid.
+  </div>
+  <div id="key_filter_button_tooltip" class="tooltip">
+      Filter recorded notes using the key guide.
+  </div>
+  <div id="metronome_button_tooltip" class="tooltip">
+      Play a metronome. When recording, gives a 4 beat lead in.
+  </div>
+</div>
+</div>
+<div id="sequencer_sidebar">
+  <div id="sequencer_sidebar_resize"></div>
+  <div id="sequencer_sidebar_title" class="title"><div id="sidebar_tab_list"></div><a href="javascript:sidebar.close()"><i class="far fa-times"></i></a></div>
+  <div id="sidebar_content"></div>
+</div>
+</div>
+<div id="bottom">
+    <div id="info">
+        <strong>OnlineSequencer.net</strong> is an online music sequencer. Make tunes in your browser and share them with friends!
+    </div>
+    <div id="links">
+        Made by <a href="https://twitter.com/Jacob__" target="_blank">Jacob Morgan</a> and <a href="https://en.wikipedia.org/wiki/George_P._Burdell" target="_blank">George Burdell</a>
+        &middot;
+        Hosting 5,043,784 sequences since 2013        &middot;
+        <a href="https://ko-fi.com/dylanfox" target="_blank">Buy us a ☕</a>        &middot;
+        <a href="/privacy" target="_blank">Privacy</a>
+        &middot;
+        <a href="https://discord.gg/FSTJuJd" target="_blank"><img src="/resources/discord.png" alt="Online Sequencer on Discord" title="Online Sequencer on Discord" width="20" height="20"/></a>
+        <a href="https://reddit.com/r/onlinesequencer" target="_blank"><img src="/resources/reddit.png" alt="Online Sequencer on Reddit" title="Online Sequencer on Reddit" width="20" height="20"/></a>
+        <!-- i infiltrated the online sequencer code just to express my deepest enamorment for none other than celt and muhngkee. inevitably, i cannot go more than 2.7 seconds without hearing the sweet sounds of their divine creation filling up my heart, filling my everything. there is no more sorrow in my wake after having experienced such blessed things in life--i am simply a changed person--full of wonder, joyousness, and glee. only melt -->
+    </div>
+</div>
+<div id="footer_ad_wrapper">
+    <div id="footer_ad">
+<!-- GAM 71161633/ONSE_onlinesequencer/sticky_footer -->
+<div data-fuse="sticky_footer"></div>
+    </div>
+    <div id="footer_ad_close" onclick="closeAd()">
+        <i class="fas fa-times"></i> Close ad
+    </div>
+</div>
+</div>
+<script type="text/javascript">
+    if(typeof onPageLoad === 'function') {
+        onPageLoad();
+    }
+</script>
+<div class="clear"></div>
+</div> <!-- End page_right -->
+<div id="stats">
+    <script type="text/javascript">
+    var sc_project=8586779; 
+    var sc_invisible=1; 
+    var sc_security="5041619c"; 
+    var scJsHost = (("https:" == document.location.protocol) ?
+    "https://secure." : "http://www.");
+    document.write("<sc"+"ript type='text/javascript' src='" +
+    scJsHost+
+    "statcounter.com/counter/counter.js'></"+"script>");
+    </script>
+    <noscript><div class="statcounter"><a title="click tracking"
+    href="http://statcounter.com/" target="_blank"><img
+    class="statcounter"
+    src="http://c.statcounter.com/8586779/0/5041619c/1/"
+    alt="click tracking"></a></div></noscript>
+</div>
+</div> <!-- End page_content -->
+</div> <!-- End page -->
+</div> <!-- End main -->
+<div id="os-popup-container"></div>
+<script>
+    createPopupContainer();
+</script>
+</div> <!-- End container -->
+<script data-cfasync="false" async src="//cdn.intergient.com/1025702/76953/ramp.js"></script><div id="chatplaceholder">
+</div>
+<br/><br/>
+</body>
+</html>
